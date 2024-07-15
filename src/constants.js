@@ -1,16 +1,20 @@
-const utmQueryParams = "utm_source=photoshop&utm_medium=plugin&utm_campaign=upscalemedia";
+const utmQueryParams =
+	"utm_source=photoshop&utm_medium=plugin&utm_campaign=upscalemedia";
+import pkgInfo from "../package.json";
 
 export const constants = {
-    urls: {
-        redirectToAppsPage: `https://console.pixelbin.io/choose-org?redirectTo=settings/apps&${utmQueryParams}`,
-        redirectToDashboardPage: `https://console.pixelbin.io/choose-org?redirectTo=dashboard&${utmQueryParams}`,
-        redirectToPricingPage: `https://console.pixelbin.io/choose-org?redirectTo=settings/billing/pricing&${utmQueryParams}`,
+	userAgent: `UpscalemediaPlugin/${pkgInfo.version} Photoshop`,
 
-        orgPricingPage: `https://console.pixelbin.io/organization/:orgId/settings/billing/pricing?${utmQueryParams}`,
+	urls: {
+		redirectToAppsPage: `https://console.pixelbin.io/choose-org?redirectTo=settings/apps&${utmQueryParams}`,
+		redirectToDashboardPage: `https://console.pixelbin.io/choose-org?redirectTo=dashboard&${utmQueryParams}`,
+		redirectToPricingPage: `https://console.pixelbin.io/choose-org?redirectTo=settings/billing/pricing&${utmQueryParams}`,
 
-        pluginHomePage: `https://www.upscale.media?${utmQueryParams}`,
-        pluginDoc: `https://www.pixelbin.io/docs/integrations/photoshop/upscale.media/?${utmQueryParams}`,
+		orgPricingPage: `https://console.pixelbin.io/organization/:orgId/settings/billing/pricing?${utmQueryParams}`,
 
-        apiDomain: "https://api.pixelbin.io",
-    },
+		pluginHomePage: `https://www.upscale.media?${utmQueryParams}`,
+		pluginDoc: `https://www.pixelbin.io/docs/integrations/photoshop/upscale.media/?${utmQueryParams}`,
+
+		apiDomain: "https://api.pixelbin.io",
+	},
 };
