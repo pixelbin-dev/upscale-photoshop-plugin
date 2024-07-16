@@ -3,7 +3,7 @@ const utmQueryParams =
 import pkgInfo from '../package.json';
 
 export const constants = {
-  userAgent: `UpscalemediaPlugin/${pkgInfo.version} Photoshop`,
+  userAgent: `UpscalemediaPlugin/${pkgInfo.version} (Photoshop)`,
 
   urls: {
     redirectToAppsPage: `https://console.pixelbin.io/choose-org?redirectTo=settings/apps&${utmQueryParams}`,
